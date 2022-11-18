@@ -12,6 +12,8 @@
     "declarationDir": "dist",
     "sourceMap": true,
     "jsx": "preserve",
+    "forceConsistentCasingInFileNames":true,
+    "strict": false,
     "baseUrl": ".",
     "types": ["vue"]
   },
