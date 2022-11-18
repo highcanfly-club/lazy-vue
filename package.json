@@ -1,6 +1,6 @@
 {
   "name": "@sctg/lazy-vue",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Lazy utilities for vue3.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,10 +17,7 @@
     "url": "git+https://github.com/highcanfly-club/lazy-vue.git"
   },
   "engines": {
-    "node": ">=8"
-  },
-  "bin": {
-    "fontmin": "cli.js"
+    "node": ">=16"
   },
   "scripts": {
     "rollup": "rollup -c",
