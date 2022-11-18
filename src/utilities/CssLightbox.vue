@@ -12,7 +12,7 @@ This website use:
         <span class="cursor-pointer" @click="opened = true">
             <img ref="imgElement" :src="srcImage" @load="load" @error="error">
         </span>
-        <span class="fixed z-999 inset-0 p-4 bg-slate-900 bg-opacity-80 justify-center"
+        <span class="fixed z-899 inset-0 p-4 bg-slate-900 bg-opacity-80 justify-center"
             :class="opened ? 'flex' : 'hidden'">
             <transition enter-active-class="transition-opacity ease-in duration-500"
                 leave-active-class="transition-opacity ease-in duration-500" enter-from-class="opacity-0"
@@ -83,3 +83,8 @@ onBeforeUnmount(() => {
     }
 });
 </script>
+<style scoped lang="scss">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>

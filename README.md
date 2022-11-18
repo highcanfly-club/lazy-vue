@@ -40,6 +40,7 @@ it needs to create zIndex: 999 in tailwindConfig
 </template>
 <script setup lang="ts">
 import {CssLightbox} from "@sctg/lazy-vue";
+import '@sctg/lazy-vue/dist/index.css'
 </script>
 
 ```

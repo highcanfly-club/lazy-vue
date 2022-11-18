@@ -1,6 +1,6 @@
 {
-  "name": "@sctg/lazy-vue",
-  "version": "1.0.1a",
+  "name": "@sctg/lazy-vue-dev",
+  "version": "1.0.2",
   "description": "Lazy utilities for vue3.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,14 +26,19 @@
     "test": "echo \"Error: no test specified yet\" && exit 0"
   },
   "dependencies": {
-    "vue":">=3.2.0",
-    "tailwindcss": ">=3.2.0"
+    "vue": ">=3.2.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "autoprefixer": "^10.4.13",
     "rollup": "^3.3.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sass": "^1.12.16",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-vue": "^6.0.0",
+    "tailwindcss": ">=3.2.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "vue": "^3.2.45"

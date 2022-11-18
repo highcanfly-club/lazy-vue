@@ -1,6 +1,10 @@
-import vue from "rollup-plugin-vue";
+import vue from "@vitejs/plugin-vue";
 import node from "@rollup/plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
+import postcss from "rollup-plugin-postcss"
+import processScss from "rollup-plugin-sass"
+import tailwindcss from "tailwindcss"
+import autoprefixer from "autoprefixer";
 import fs from 'fs'
 
 fs.rmSync('dist', { recursive: true, force: true });
@@ -12,6 +16,9 @@ const vuePluginConfig = {
       whitespace: "condense",
     },
   },
+  style:{
+    postcssPlugins:[tailwindcss,autoprefixer],
+  }
 };
 
 const config = [
@@ -25,6 +32,7 @@ const config = [
         extensions: [".vue", ".ts"],
       }),
       vue(vuePluginConfig),
+      postcss({ extract: true, process: processScss}),
       typescript({useTsconfigDeclarationDir:true},
       ),
     ],
