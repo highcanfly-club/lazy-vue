@@ -29,6 +29,7 @@ import {LazyImg} from "@sctg/lazy-vue";
 
 ## CssLightbox
 this is a no script pure css lightbox
+it needs to create zIndex: 999 in tailwindConfig
 ```html
 <template>
     <css-lightbox class="absolute block left-0 top-O w-full h-full"
