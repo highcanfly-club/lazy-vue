@@ -23,7 +23,7 @@ it loads a component while the user scrolls on it
                 alt="Alt text" />
 </template>
 <script setup lang="ts">
-import {Lazyimg} from "@sctg/lazy-vue";
+import {LazyImg} from "@sctg/lazy-vue";
 </script>
 ```
 
