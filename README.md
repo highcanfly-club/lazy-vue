@@ -38,7 +38,7 @@ this is a no script pure css lightbox
             />
 </template>
 <script setup lang="ts">
-import {Lazyimg} from "@sctg/lazy-vue";
+import {CssLightbox} from "@sctg/lazy-vue";
 </script>
 
 ```
