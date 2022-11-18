@@ -1,6 +1,6 @@
 {
   "name": "@sctg/lazy-vue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lazy utilities for vue3.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

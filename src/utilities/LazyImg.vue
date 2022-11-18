@@ -18,18 +18,23 @@ export default {
     },
     srcPlaceholder: {
       type: String,
+      required: false,
       default:
         "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
     },
     srcset: {
-      type: String
+      required: false,
+      type: String,
+      default:""
     },
     intersectionOptions: {
       type: Object,
+      required: false,
       default: () => ({})
     },
     usePicture: {
       type: Boolean,
+      required: false,
       default: false
     }
   },
