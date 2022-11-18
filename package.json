@@ -50,6 +50,7 @@
     "test": "test"
   },
   "publishConfig": {
-    "tag": "beta"
+    "access": "public",
+    "tag": "latest"
   }
 }
