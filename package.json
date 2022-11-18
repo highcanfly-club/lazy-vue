@@ -1,0 +1,55 @@
+{
+  "name": "@sctg/lazy-vue",
+  "version": "1.0.1",
+  "description": "Lazy utilities for vue3.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "private": false,
+  "keywords": [
+    "vue",
+    "lazy"
+  ],
+  "author": "Ronan Le Meillat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/highcanfly-club/lazy-vue.git"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "bin": {
+    "fontmin": "cli.js"
+  },
+  "scripts": {
+    "rollup": "rollup -c",
+    "build": "npm run rollup",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified yet\" && exit 0"
+  },
+  "dependencies": {
+    "vue":">=3.2.0",
+    "tailwindcss": ">=3.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "rollup": "^3.3.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3",
+    "vue": "^3.2.45"
+  },
+  "bugs": {
+    "url": "https://github.com/highcanfly-club/lazy-vue/issues"
+  },
+  "homepage": "https://github.com/highcanfly-club/lazy-vue#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "publishConfig": {
+    "tag": "beta"
+  }
+}
